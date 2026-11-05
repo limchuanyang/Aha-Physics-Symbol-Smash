@@ -1,0 +1,204 @@
+<!-- AHA SYMBOL SMASH | Blogger: New Post > HTML view > paste everything below -->
+<div id="aha">
+<style>
+#aha{--y:#ffd400;max-width:680px;margin:14px auto;padding:10px;background:linear-gradient(#0d0b2a,#17134a);color:#e8e8ff;font:bold 14px/1.25 "Courier New",monospace;border:4px solid #4b4bb5;box-shadow:0 0 0 4px #0a0a1f,0 0 0 8px var(--y);position:relative;overflow:hidden;user-select:none;-webkit-user-select:none;touch-action:manipulation;box-sizing:border-box;text-align:left}
+#aha *{box-sizing:border-box}
+#aha:after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(0,0,0,.22) 0 1px,transparent 1px 3px);pointer-events:none;z-index:70}
+#aha .top{display:flex;gap:12px;align-items:center;position:relative;z-index:45}
+#aha canvas{flex:none;width:112px;height:98px;image-rendering:pixelated;display:block}
+#aha .bob{animation:ahaB .8s steps(2) infinite}
+#aha .hop{animation:ahaH .45s steps(4)}
+#aha .shk{animation:ahaS .45s linear}
+@keyframes ahaB{50%{transform:translateY(-4px)}}
+@keyframes ahaH{40%{transform:translateY(-16px) scale(1.1)}}
+@keyframes ahaS{25%{transform:translateX(-7px)}75%{transform:translateX(7px)}}
+#aha .side{flex:1;min-width:0}
+#aha .say{background:#fff;color:#14123d;padding:6px 8px;border:3px solid #14123d;box-shadow:3px 3px 0 #000;position:relative;margin:0 0 8px 10px;min-height:36px;font-size:13px}
+#aha .say:before{content:"";position:absolute;left:-15px;top:10px;border:6px solid transparent;border-right:9px solid #14123d}
+#aha .hud{display:flex;justify-content:space-between;gap:6px;font-size:15px}
+#aha .hud b{color:var(--y)}
+#aha .hr{color:#ff4d6d;letter-spacing:2px}
+#aha .bar{height:10px;background:#000;border:2px solid #4b4bb5;margin-top:5px}
+#aha .bar i{display:block;height:100%;width:100%;background:var(--y)}
+#aha .rk{font-size:12px;margin-top:5px;color:#8ff;display:flex;gap:6px;align-items:center}
+#aha .rk .bar{flex:1;margin:0;height:8px}
+#aha .rk .bar i{background:#4dd0e1;width:0}
+#aha .pr{margin:10px 0 4px;padding:8px;background:#000;border:3px solid var(--y);text-align:center;font-size:clamp(18px,5.5vw,28px);color:#fff;text-shadow:2px 2px 0 #c0392b}
+#aha .pr small{display:block;font-size:11px;color:#8ff;text-shadow:none}
+#aha .pr b{color:var(--y)}
+#aha .cmb{height:24px;text-align:center;color:#ff9f1c;font-size:16px;text-shadow:2px 2px 0 #000;line-height:24px}
+#aha .grid{display:grid;grid-template-columns:repeat(5,1fr);gap:4px}
+#aha .cell{position:relative;aspect-ratio:1/1;cursor:pointer;-webkit-tap-highlight-color:transparent}
+#aha .hole{position:absolute;left:3%;right:3%;bottom:4%;height:30%;background:#04020a;border:3px solid #2b1a10;border-radius:50%}
+#aha .clip{position:absolute;left:8%;right:8%;top:0;bottom:19%;overflow:hidden;z-index:1}
+#aha .chip{position:absolute;left:6%;right:6%;bottom:0;height:82%;transform:translateY(108%);transition:transform .1s steps(3);display:flex;align-items:center;justify-content:center;font-size:clamp(26px,8vw,52px);color:#1a1030;border:3px solid #1a1030;box-shadow:inset -4px -4px 0 rgba(0,0,0,.28),inset 4px 4px 0 rgba(255,255,255,.4);font-family:Georgia,"Times New Roman",serif}
+#aha .chip:before,#aha .chip:after{content:"";position:absolute;top:-9px;width:22%;height:11px;background:inherit;border:3px solid #1a1030;border-bottom:0}
+#aha .chip:before{left:8%}#aha .chip:after{right:8%}
+#aha .chip.up{transform:none}
+#aha .chip.bad{animation:ahaS .35s linear;filter:grayscale(1) brightness(.7)}
+#aha .front{position:absolute;left:0;right:0;bottom:2%;height:19%;background:#6b4426;border:3px solid #2b1a10;border-top:0;border-radius:0 0 50% 50%/0 0 100% 100%;z-index:2}
+#aha .p{position:absolute;left:50%;top:40%;width:8px;height:8px;z-index:5;animation:ahaP .5s steps(5) forwards;pointer-events:none}
+@keyframes ahaP{to{transform:translate(var(--x),var(--y));opacity:0}}
+#aha .fl{position:absolute;left:10%;top:15%;z-index:6;color:#fff;font-size:16px;text-shadow:2px 2px 0 #000;animation:ahaF .8s steps(8) forwards;pointer-events:none}
+@keyframes ahaF{to{transform:translateY(-34px);opacity:0}}
+#aha .tc{display:flex;gap:10px;align-items:center;margin-top:10px;min-height:84px;padding:8px;background:#000;border:3px solid #4b4bb5;font-size:13px}
+#aha .tg{font:52px/1 Georgia,serif;width:58px;text-align:center;flex:none}
+#aha .bn{position:absolute;left:0;right:0;top:46%;text-align:center;font-size:clamp(22px,7vw,40px);color:var(--y);text-shadow:3px 3px 0 #c0392b,-2px -2px 0 #000;z-index:55;opacity:0;pointer-events:none}
+#aha .bn.s{animation:ahaN 1.7s steps(12) forwards}
+@keyframes ahaN{0%{transform:scale(.3);opacity:1}15%{transform:scale(1.15)}30%,80%{transform:scale(1);opacity:1}100%{opacity:0}}
+#aha .ov{position:absolute;inset:0;background:rgba(6,5,24,.94);z-index:40;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;text-align:center;padding:124px 12px 12px;gap:8px;overflow:auto}
+#aha .lg{font-size:clamp(26px,8vw,44px);color:var(--y);line-height:1;text-shadow:3px 3px 0 #c0392b,6px 6px 0 #000}
+#aha .rc{display:inline-block;width:28px;height:32px;line-height:32px;margin:2px;color:#1a1030;border:2px solid #000;font:20px/30px Georgia,serif}
+#aha .btn{font:inherit;font-size:20px;color:#1a1030;background:var(--y);border:4px solid #1a1030;box-shadow:0 5px 0 #b38600,0 0 0 3px var(--y);padding:10px 26px;cursor:pointer;margin:8px 0 6px}
+#aha .btn:active{transform:translateY(4px);box-shadow:0 1px 0 #b38600,0 0 0 3px var(--y)}
+#aha .mt{font-size:12px;color:#8ff;cursor:pointer;text-decoration:underline}
+@media(max-width:480px){#aha canvas{width:84px;height:74px}#aha .ov{padding-top:96px}#aha .say{font-size:12px}#aha .tg{font-size:40px;width:44px}}
+@media(prefers-reduced-motion:reduce){#aha .bob{animation:none}}
+</style>
+<div class="top">
+ <canvas id="ahaC" width="32" height="28" class="bob"></canvas>
+ <div class="side">
+  <div class="say" id="ahaSay">Not by sight, but by INSIGHT.</div>
+  <div class="hud"><span class="hr" id="ahaH">&#9829;&#9829;&#9829;</span><span id="ahaT">60s</span><span id="ahaX">XP 0</span></div>
+  <div class="bar"><i id="ahaTB"></i></div>
+  <div class="rk"><span id="ahaR">Novice Crab</span><div class="bar"><i id="ahaRB"></i></div></div>
+ </div>
+</div>
+<div class="pr"><small id="ahaM">FIND</small><span id="ahaP">&nbsp;</span></div>
+<div class="cmb" id="ahaCb"></div>
+<div class="grid" id="ahaG"></div>
+<div class="tc" id="ahaTc"><div class="tg" id="ahaTg">&#955;</div><div id="ahaTx">Hit the matching symbol. Every hit locks it into your memory.</div></div>
+<div class="bn" id="ahaBn"></div>
+<div class="ov" id="ahaOv"></div>
+</div>
+<script>
+(function(){
+var $=function(i){return document.getElementById(i)};
+var S=[
+{g:"\u03b1",n:"Alpha Particle",c:"#ff6b6b",f:"Helium nucleus (2p+2n)",h:"\u03b1 swims like a fish: heavy, slow, stopped by paper!"},
+{g:"\u03b2",n:"Beta Particle",c:"#ffa94d",f:"Fast electron from the nucleus",h:"\u03b2 = B for Bolt: a fast electron, stopped by aluminium."},
+{g:"\u03b3",n:"Gamma Ray",c:"#b197fc",f:"EM wave, no mass, no charge",h:"\u03b3 zig-zags like a ray: deepest penetration, needs lead."},
+{g:"\u0394",n:"Change",c:"#ffd43b",f:"\u0394T = T\u2082 \u2212 T\u2081 (final \u2212 initial)",h:"\u0394 is a triangle = a step of change."},
+{g:"\u03b8",n:"Angle",c:"#f783ac",f:"\u03b8i = \u03b8r, sin \u03b8, \u03b8c critical angle",h:"\u03b8 = a tilted egg: angle!"},
+{g:"\u03bb",n:"Wavelength",c:"#4dd0e1",f:"v = f\u03bb  (unit: m)",h:"\u03bb leans forward like a wave riding a surfboard."},
+{g:"\u03b7",n:"Efficiency",c:"#69db7c",f:"\u03b7 = (output \u00f7 input) \u00d7 100%",h:"\u03b7 = 'n' for Neat: how much energy is NOT wasted."},
+{g:"\u03c1",n:"Density",c:"#74c0fc",f:"\u03c1 = m \u00f7 V  (kg m\u207b\u00b3)",h:"\u03c1 looks like a P: Packed mass per volume."},
+{g:"\u03bc",n:"Micro (\u00d710\u207b\u2076)",c:"#da77f2",f:"1 \u03bcm = 10\u207b\u2076 m",h:"\u03bc = a tiny 'u' with a tail: micro, very small."},
+{g:"\u03a9",n:"Resistance",c:"#ced4da",f:"R = V \u00f7 I  (unit: ohm \u03a9)",h:"\u03a9 = a horseshoe: current must jump over resistance."}];
+var RK=[["Novice Crab",0],["Symbol Scout",200],["Formula Hunter",600],["Greek Ninja",1200],["SPM Physics Master",2000]];
+var SAY={idle:["Not by sight, but by INSIGHT.","Spot the symbol!","AHA! Ready?"],ok:["AHA!","INSIGHT!","Got it!","Snap!"],bad:["Now you know!","Remember it!","Oops, learn it!"],cmb:["COMBO!!","On fire!","Unstoppable!"],up:["RANK UP!!"],done:["Great dig, hero!"]};
+var tot=0,hi=0,miss=[],G=null,tm,pt,AC,mute=0,pose="idle",fr=0,chips=[],cells=[];
+try{tot=+localStorage.getItem("ahaXP")||0;hi=+localStorage.getItem("ahaBest")||0}catch(e){}
+var cv=$("ahaC"),cx=cv.getContext("2d");
+function R(c,x,y,w,h){cx.fillStyle=c;cx.fillRect(x,y,w,h)}
+function draw(){
+ cx.clearRect(0,0,32,28);
+ var happy=pose=="ok"||pose=="cmb"||pose=="up"||pose=="done",bad=pose=="bad",
+ up=pose=="idle"?fr:(bad?0:1),o="#1a1030",b="#ff5a3c",d="#c4361f",y="#ffd400",cy=up?7:15,k,r,c;
+ if(bad)cy=17;
+ for(k=0;k<3;k++){R(d,6+k*2,22+((k+fr)%2),1,3);R(d,25-k*2,22+((k+fr)%2),1,3)}
+ var ay=Math.min(cy+3,15),ah=Math.abs(cy+3-15)+2;
+ R(b,6,ay,2,ah);R(b,24,ay,2,ah);
+ R(b,2,cy,5,5);R(b,25,cy,5,5);cx.clearRect(4,cy,1,2);cx.clearRect(27,cy,1,2);
+ R(b,8,13,16,9);R(b,9,12,14,1);R(b,9,22,14,1);R(d,9,20,14,2);
+ R(y,12,4,8,1);R(y,10,5,12,1);R(y,9,6,14,5);R("#fff2a0",11,5,3,1);R(y,7,11,18,1);R("#d99a00",7,12,18,1);
+ var P={A:[2,5,7,5,5],H:[5,5,7,5,5]},L="AHA";
+ for(k=0;k<3;k++)for(r=0;r<5;r++)for(c=0;c<3;c++)if((P[L.charAt(k)][r]>>(2-c))&1)R(o,11+k*4+c,6+r,1,1);
+ for(k=0;k<2;k++){var ex=11+k*7;
+  if(bad){R(o,ex,14,1,1);R(o,ex+2,14,1,1);R(o,ex+1,15,1,1);R(o,ex,16,1,1);R(o,ex+2,16,1,1)}
+  else if(happy){R(o,ex,15,1,1);R(o,ex+1,14,1,1);R(o,ex+2,15,1,1)}
+  else{R("#fff",ex,14,3,3);R(o,ex+1,15,1,2)}}
+ if(happy){R(o,13,18,6,1);R(o,14,19,4,1);R("#ff7f9f",15,19,2,1)}
+ else if(bad){R(o,14,19,4,1);R(o,13,20,1,1);R(o,18,20,1,1)}
+ else R(o,14,18,4,1);
+ R("#ff9f8a",9,17,2,1);R("#ff9f8a",21,17,2,1);
+ if(pose=="cmb"||pose=="up"||pose=="done"){var s=fr?"#fff":y;R(s,3,3,2,2);R(s,28,2,2,2);R(s,1,12-fr*2,1,1);R(s,30,13+fr*2,1,1);R(s,15,1,2,2)}
+ if(pose=="up"){R("#fff",16,0,1,1)}
+ if(bad)R("#6cf",27,9,2,3);
+}
+function setPose(p,ms){
+ pose=p;cv.className=p=="bad"?"shk":p=="idle"?"bob":"hop";draw();
+ var a=SAY[p];$("ahaSay").textContent=a[Math.floor(Math.random()*a.length)];
+ clearTimeout(pt);if(ms)pt=setTimeout(function(){setPose("idle")},ms)}
+setInterval(function(){fr^=1;draw()},400);
+function beep(f,d,t){if(mute)return;try{AC=AC||new(window.AudioContext||window.webkitAudioContext)();var o=AC.createOscillator(),g=AC.createGain();o.type=t||"square";o.frequency.value=f;g.gain.value=.05;o.connect(g);g.connect(AC.destination);o.start();g.gain.exponentialRampToValueAtTime(.001,AC.currentTime+d);o.stop(AC.currentTime+d)}catch(e){}}
+var SF=[[[180,.2,"sawtooth"],[120,.3,"sawtooth"]],[[660,.08],[880,.12]],[[784,.07],[988,.07],[1319,.15]],[[523,.1],[659,.1],[784,.1],[1047,.3]]];
+function sfx(k){SF[k].forEach(function(n,i){setTimeout(function(){beep(n[0],n[1],n[2])},i*90)})}
+function rk(x){var r=0;for(var i=0;i<RK.length;i++)if(x>=RK[i][1])r=i;return r}
+function banner(h){var e=$("ahaBn");e.innerHTML=h;e.className="bn";void e.offsetWidth;e.className="bn s"}
+var gr=$("ahaG");
+for(var i=0;i<10;i++){var c=document.createElement("div");c.className="cell";c.setAttribute("data-i",i);
+ c.innerHTML='<div class="hole"></div><div class="clip"><div class="chip"></div></div><div class="front"></div>';
+ gr.appendChild(c);cells.push(c);chips.push(c.querySelector(".chip"))}
+gr.addEventListener("pointerdown",function(e){var c=e.target.closest?e.target.closest(".cell"):null;if(c&&G)hit(+c.getAttribute("data-i"))});
+function burst(cell,col){for(var i=0;i<9;i++){var d=document.createElement("div");d.className="p";var a=i/9*6.28,r=30+Math.random()*30;d.style.cssText="background:"+col+";--x:"+Math.cos(a)*r+"px;--y:"+Math.sin(a)*r+"px";cell.appendChild(d);setTimeout(function(x){return function(){x.remove()}}(d),520)}}
+function flt(cell,t){var d=document.createElement("div");d.className="fl";d.textContent=t;cell.appendChild(d);setTimeout(function(){d.remove()},820)}
+function teach(i,k,w){var s=S[i],t=$("ahaTx");$("ahaTg").textContent=s.g;$("ahaTg").style.color=s.c;$("ahaTc").style.borderColor=s.c;
+ if(k==1)t.innerHTML='<span style="color:#6f6">HIT!</span> '+s.g+' = <b style="color:'+s.c+'">'+s.n+'</b><br>'+s.f+'<br>'+s.h;
+ else if(k==0)t.innerHTML='<span style="color:#f88">TOO SLOW!</span> '+s.g+' = <b style="color:'+s.c+'">'+s.n+'</b><br>'+s.f+'<br>'+s.h;
+ else{var o=S[w];t.innerHTML='<span style="color:#fc6">That was '+o.g+' = '+o.n+'.</span><br>You need '+s.g+' = <b style="color:'+s.c+'">'+s.n+'</b><br>'+s.h}}
+function pick(){var w=0,a=[],i;for(i=0;i<10;i++){var x=i==G.tg?0:1+(miss[i]||0)*2;a.push(x);w+=x}var r=Math.random()*w;for(i=0;i<10;i++){r-=a[i];if(r<=0)return i}return 0}
+function prompt(){$("ahaP").innerHTML="Find <b>"+S[G.tg].n+"</b>";$("ahaM").textContent=G.boss?"BOSS ROUND: ALL 10 SYMBOLS":"FIND THE SYMBOL"}
+function hud(){var t=Math.ceil(G.t),x=tot+G.xp,r=rk(x),n=RK[r+1],h="";
+ for(var i=0;i<3;i++)h+=i<G.h?"\u2665":"\u2661";
+ $("ahaH").textContent=h;$("ahaT").textContent=t+"s";$("ahaX").textContent="XP "+x;
+ $("ahaTB").style.width=(G.t/60*100)+"%";$("ahaTB").style.background=G.boss?"#ff4d6d":"#ffd400";
+ $("ahaR").textContent=RK[r][0];$("ahaRB").style.width=(n?(x-RK[r][1])/(n[1]-RK[r][1])*100:100)+"%";
+ var mu=G.c>=10?4:G.c>=6?3:G.c>=3?2:1;
+ $("ahaCb").textContent=G.c>=2?"\u2605 COMBO x"+G.c+"  XP \u00d7"+mu+" \u2605":""}
+function place(i,s,life){var m={i:i,s:s,exp:Date.now()+life};G.cm[i]=m;G.m.push(m);var e=chips[i];e.textContent=S[s].g;e.style.background=S[s].c;e.classList.add("up");return m}
+function rm(m){if(!G||G.cm[m.i]!==m)return;G.cm[m.i]=null;G.m=G.m.filter(function(x){return x!==m});chips[m.i].classList.remove("up","bad")}
+function clearAll(){for(var i=0;i<10;i++)chips[i].classList.remove("up","bad");if(G){G.m=[];G.cm=[]}}
+function free(){var f=[];for(var i=0;i<10;i++)if(!G.cm[i])f.push(i);return f}
+function spawn(s,life){var f=free();if(!f.length)return 0;place(f[Math.floor(Math.random()*f.length)],s,life);return 1}
+function decoy(){var on={},o=[],i;G.m.forEach(function(m){on[m.s]=1});for(i=0;i<10;i++)if(!on[i]&&i!=G.tg)o.push(i);if(!o.length)return 0;return spawn(o[Math.floor(Math.random()*o.length)],2000+Math.random()*1000)}
+function addXp(g){var a=rk(tot+G.xp);G.xp+=g;var b=rk(tot+G.xp);if(b>a){banner("RANK UP!<br>"+RK[b][0]);setPose("up",2400);sfx(3)}}
+function bossFill(){clearAll();setTimeout(function(){if(!G||!G.boss)return;var p=[0,1,2,3,4,5,6,7,8,9].sort(function(){return Math.random()-.5});for(var i=0;i<10;i++)place(i,p[i],1e12)},150)}
+function startBoss(){G.boss=1;clearAll();banner("BOSS ROUND!<br>ALL 10 SYMBOLS");setPose("cmb",1800);sfx(3);G.tg=pick();prompt();bossFill()}
+function hit(i){var m=G.cm[i];if(!m||m.bad)return;var cell=cells[i];
+ if(m.s==G.tg){
+  G.c++;G.hit++;if(G.c>G.best)G.best=G.c;
+  var mu=G.c>=10?4:G.c>=6?3:G.c>=3?2:1,g=10*mu*(G.boss?2:1),t=G.tg;
+  burst(cell,S[m.s].c);flt(cell,"+"+g);rm(m);teach(t,1);
+  if(G.c%5==0){setPose("cmb",1400);sfx(2);banner("COMBO x"+G.c+"!")}else{setPose("ok",700);sfx(1)}
+  addXp(g);G.tg=pick();prompt();if(G.boss)bossFill();hud();
+ }else{
+  G.c=0;G.bad++;miss[m.s]=(miss[m.s]||0)+1;miss[G.tg]=(miss[G.tg]||0)+1;
+  teach(G.tg,2,m.s);setPose("bad",1400);sfx(0);flt(cell,"MISS");
+  m.bad=1;chips[i].classList.add("bad");
+  setTimeout(function(){m.bad=0;if(G&&G.boss)chips[i].classList.remove("bad");else rm(m)},380);hud()}}
+function lose(){var t=G.tg;G.h--;G.ms++;G.c=0;miss[t]=(miss[t]||0)+1;teach(t,0);setPose("bad",1400);sfx(0);
+ if(G.h<=0)return finish(1);G.tg=pick();prompt();hud()}
+function tick(){
+ if(!G)return;var n=Date.now();G.t=Math.max(0,(G.end-n)/1000);hud();
+ if(G.t<=0)return finish(0);
+ if(!G.boss&&G.t<=15)return startBoss();
+ if(G.boss)return;
+ var ms=G.m.slice();
+ for(var k=0;k<ms.length;k++){var m=ms[k];
+  if(n>m.exp&&!m.bad){var wt=m.s==G.tg;rm(m);
+   if(wt&&!G.m.some(function(x){return x.s==G.tg})){lose();if(!G)return}}}
+ var life=Math.max(2000,3000-(60-G.t)*20);
+ if(!G.m.some(function(x){return x.s==G.tg}))spawn(G.tg,life);
+ var want=G.t<35?4:3,tries=0;
+ while(G.m.length<want&&tries++<6)decoy()}
+function ov(h){var e=$("ahaOv");e.innerHTML=h;e.style.display="flex";var b=$("ahaGo");if(b)b.onclick=start;var s=$("ahaSnd");if(s)s.onclick=function(){mute^=1;s.textContent=mute?"Sound: OFF":"Sound: ON"}}
+function roster(){var h="";S.forEach(function(s){h+='<span class="rc" style="background:'+s.c+'">'+s.g+'</span>'});return h}
+function title(){setPose("idle");ov('<div class="lg">AHA SYMBOL<br>SMASH</div><div>SPM Physics &middot; \u6253\u5730\u9f20</div><div>'+roster()+'</div><div style="max-width:420px">Read the clue, smash the matching Greek symbol before it hides. 3 hearts. 60 seconds. Boss round at the end!</div><button class="btn" id="ahaGo">START</button><div style="color:#ffd400">Not by sight, but by INSIGHT.</div><div>Rank: '+RK[rk(tot)][0]+' &middot; Total XP '+tot+' &middot; Best run '+hi+'</div><div class="mt" id="ahaSnd">Sound: ON</div>')}
+function start(){
+ clearInterval(tm);G={t:60,end:Date.now()+60000,h:3,xp:0,c:0,best:0,hit:0,bad:0,ms:0,m:[],cm:[],tg:-1,boss:0};
+ clearAll();G.tg=pick();prompt();$("ahaOv").style.display="none";
+ $("ahaTx").innerHTML="Hit the matching symbol. Every hit locks it into your memory.";
+ setPose("idle");sfx(2);hud();tm=setInterval(tick,80)}
+function finish(over){
+ clearInterval(tm);var g=G;clearAll();G=null;tot+=g.xp;if(g.xp>hi)hi=g.xp;
+ try{localStorage.setItem("ahaXP",tot);localStorage.setItem("ahaBest",hi)}catch(e){}
+ var ac=Math.round(100*g.hit/Math.max(1,g.hit+g.bad+g.ms)),w=[];
+ for(var i=0;i<10;i++)if(miss[i])w.push(i);
+ w.sort(function(a,b){return miss[b]-miss[a]});
+ var rv=w.slice(0,3).map(function(i){return '<span style="color:'+S[i].c+'">'+S[i].g+' '+S[i].n+'</span>'}).join(" &middot; ");
+ setPose("done",0);sfx(over?0:3);
+ ov('<div class="lg" style="font-size:clamp(22px,6vw,34px)">'+(over?"CRAB DOWN!":"TIME UP!")+'</div><div>+'+g.xp+' XP &middot; '+g.hit+' hits &middot; Best combo '+g.best+' &middot; Accuracy '+ac+'%</div><div style="color:#4dd0e1">Rank: '+RK[rk(tot)][0]+' ('+tot+' XP)</div>'+(rv?'<div>Review next: '+rv+'</div>':'<div>Perfect insight. No weak symbols!</div>')+'<button class="btn" id="ahaGo">PLAY AGAIN</button><div class="mt" id="ahaSnd">'+(mute?"Sound: OFF":"Sound: ON")+'</div>')}
+title();
+})();
+</script>
